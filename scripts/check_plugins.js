@@ -1,7 +1,6 @@
 const colors = require('colors/safe');
 const config = require('pelias-config').generate();
-const es = require('elasticsearch');
-const client = new es.Client(config.esclient);
+const client = require('../esclient');
 const cli = require('./cli');
 
 // mandatory plugins

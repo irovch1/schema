@@ -1,6 +1,5 @@
 var config = require('pelias-config').generate();
-var es = require('elasticsearch');
-var client = new es.Client(config.esclient);
+const client = require('../esclient');
 var schema = require('../schema');
 
 var _index = config.schema.indexName;

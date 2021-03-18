@@ -13,7 +13,8 @@
     "drop_index": "node scripts/drop_index",
     "reset_type": "node scripts/reset_type",
     "update_settings": "node scripts/update_settings",
-    "travis": "npm run test && npm run integration"
+    "travis": "npm run test && npm run integration",
+    "debug": "PATH=$PATH:/usr/local/bin PELIAS_CONFIG=/Users/ivanrazhnou/git/pelias/config.portland_metro.json node scripts/create_index.js"
   },
   "repository": {
     "type": "git",
@@ -30,9 +31,11 @@
     "node": ">=10.0.0"
   },
   "dependencies": {
+    "@elastic/elasticsearch": "^7.9.1",
     "@hapi/joi": "^16.1.8",
+    "aws-sdk": "^2.866.0",
+    "aws4": "^1.11.0",
     "colors": "^1.1.2",
-    "elasticsearch": "^16.0.0",
     "glob": "^7.1.6",
     "lodash": "^4.17.15",
     "pelias-config": "^4.5.0",

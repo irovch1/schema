@@ -1,6 +1,5 @@
 const child_process = require('child_process');
 const config = require('pelias-config').generate();
-const es = require('elasticsearch');
 const SUPPORTED_ES_VERSIONS = '>=7.4.2';
 
 const cli = require('./cli');
@@ -8,7 +7,7 @@ const schema = require('../schema');
 
 cli.header("create index");
 
-const client = new es.Client(config.esclient);
+const client = require('../esclient');
 
 // check minimum elasticsearch versions before continuing
 try {
