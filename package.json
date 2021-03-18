@@ -36,6 +36,7 @@
     "aws-sdk": "^2.866.0",
     "aws4": "^1.11.0",
     "colors": "^1.1.2",
+    "esclient": "../esclient",
     "glob": "^7.1.6",
     "lodash": "^4.17.15",
     "pelias-config": "^4.5.0",

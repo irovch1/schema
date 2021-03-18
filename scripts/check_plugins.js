@@ -1,6 +1,5 @@
 const colors = require('colors/safe');
-const config = require('pelias-config').generate();
-const client = require('../esclient');
+const {client, config} = require('esclient');
 const cli = require('./cli');
 
 // mandatory plugins

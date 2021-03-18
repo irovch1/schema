@@ -1,5 +1,4 @@
-var config = require('pelias-config').generate().esclient;
-const client = require('../esclient');
+const {client, config} = require('esclient');
 var schema = require('../schema');
 
 var _index = ( process.argv.length > 3 ) ? process.argv[3] : config.schema.indexName;

@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const semver = require('semver');
-const client = require('../esclient');
+const {client} = require('esclient');
 const cli = require('./cli');
 
 // pass target elastic version semver as the first CLI arg

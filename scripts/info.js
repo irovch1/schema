@@ -1,3 +1,3 @@
-const client = require('../esclient');
+const {client} = require('esclient');
 
 client.info( {}, console.log.bind(console) );
