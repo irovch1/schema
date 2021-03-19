@@ -14,7 +14,7 @@
     "reset_type": "node scripts/reset_type",
     "update_settings": "node scripts/update_settings",
     "travis": "npm run test && npm run integration",
-    "debug": "PATH=$PATH:/usr/local/bin PELIAS_CONFIG=/Users/ivanrazhnou/git/pelias/config.portland_metro.json node scripts/create_index.js"
+    "debug": "PATH=$PATH:/usr/local/bin PELIAS_CONFIG=/Users/ivanrazhnou/git/pelias/config.england.json node scripts/create_index.js"
   },
   "repository": {
     "type": "git",
