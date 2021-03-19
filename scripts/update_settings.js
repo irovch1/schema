@@ -1,4 +1,5 @@
-const {client, config} = require('esclient');
+const config = require('pelias-config').generate();
+const client = require('esclient')(config);
 var schema = require('../schema');
 
 var _index = config.schema.indexName;

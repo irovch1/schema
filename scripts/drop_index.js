@@ -1,5 +1,6 @@
 const colors = require('colors/safe');
-const {client, config} = require('esclient');
+const config = require('pelias-config').generate();
+const client = require('esclient')(config);
 const readline = require('readline');
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 

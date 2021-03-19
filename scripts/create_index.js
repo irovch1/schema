@@ -1,5 +1,6 @@
 const child_process = require('child_process');
-const {client, config} = require('esclient');
+const config = require('pelias-config').generate();
+const client = require('esclient')(config);
 const SUPPORTED_ES_VERSIONS = '>=7.4.2';
 
 const cli = require('./cli');

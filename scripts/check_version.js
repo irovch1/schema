@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const semver = require('semver');
-const {client} = require('esclient');
+const config = require('pelias-config').generate();
+const client = require('esclient')(config);
 const cli = require('./cli');
 
 // pass target elastic version semver as the first CLI arg
